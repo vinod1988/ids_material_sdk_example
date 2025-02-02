@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ids_material_sdk/ui/widget/ids_dropdown_title.dart';
+import 'package:ids_material_sdk/ui/widget/search_array_data_dialog.dart';
 import 'package:ids_material_sdk/ui/widget/theme.dart';
 import 'package:ids_material_sdk_example/ids_helper.dart';
 
@@ -35,7 +36,7 @@ class _SearchDialogExampleState extends State<SearchDialogExample> {
             children: [
               IDSDropdownTitle(
                   title: 'Customer *',
-                  selectedValue: "Demo",
+                  selectedValue: _customer,
                   onTap: () {
                     showSearchDialog(
                         2, customerArray, "name", "Search customer");
